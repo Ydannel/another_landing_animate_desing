@@ -1,4 +1,6 @@
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar';
+
 
 //#881600 amarillo
 //#4A148C purpura oscuro
@@ -6,6 +8,7 @@ import Navbar from './components/Navbar'
 function App() {
   return (
     <div className="App">
+      <Sidebar/>
        <Navbar/>
     </div>
   );

@@ -1,9 +1,12 @@
+import {SidebarContainer, Icon, CloseIcon} from './styles'
 
 const Sidebar = () => {
     return ( 
-        <div>
-            
-        </div>
+        <SidebarContainer>
+            <Icon>
+                <CloseIcon/>
+            </Icon>
+        </SidebarContainer>
      );
 }
  
