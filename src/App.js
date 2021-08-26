@@ -1,5 +1,5 @@
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar';
+import Home from "./pages";
+
 
 
 //#881600 amarillo
@@ -8,8 +8,7 @@ import Sidebar from './components/Sidebar';
 function App() {
   return (
     <div className="App">
-      <Sidebar/>
-       <Navbar/>
+      <Home/>
     </div>
   );
 }

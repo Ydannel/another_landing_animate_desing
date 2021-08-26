@@ -30,3 +30,59 @@ export const Icon = styled.div`
     cursor: pointer;
     outline: none;
 `
+export const SidebarWrapper = styled.div`
+    color: white;
+`
+export const SidebarMenu = styled.ul`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    text-align: center;
+
+    @media screen and (max-width: 480px){
+        grid-template-rows: repeat(6, 60px);
+    }
+`
+export const SidebarLink = styled(LinkS)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+ 
+   
+    &:hover{
+        transition:  0.2s ease-in-out;
+        
+        color:#E65100;
+    }
+`
+export const SidebarBtn = styled.div`
+    display: flex;
+    justify-content: center;
+`
+export const SidebarBtnLink = styled(LinkR)`
+    border-radius: 50px;
+    background: #E65100;
+    white-space: nowrap;
+    padding: 16px 68px;
+    margin-right: -2rem;
+    color: #fffffe;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #4A148C;
+        color: #fffffe;
+    }
+`
+

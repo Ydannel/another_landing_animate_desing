@@ -1,12 +1,12 @@
 import {Nav, NavbarContainer, LogoNav, NavMenu, NavItem, NavLinks, MobileIcon, Navbtn, NavbtnLink} from './styles'
 import {FaBars} from 'react-icons/fa'
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return ( 
         <>
             <Nav>
                 <NavbarContainer>
                     <LogoNav to='/'>Carnibal fantasy</LogoNav>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
