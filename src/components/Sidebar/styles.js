@@ -4,8 +4,8 @@ import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
-    position: fixed;
-    z-index: 999;
+    position: absolute;
+    z-index: ${({isOpen})=>(isOpen ? '999': '0')};
     width: 100%;
     height: 100%;
     background: #0d0d0d;
