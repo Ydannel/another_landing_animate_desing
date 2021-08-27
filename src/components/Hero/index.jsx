@@ -17,10 +17,16 @@ const Hero = () => {
             <HeroContent>
                 <Title> A new world, a fantasy adventure</Title>
                 <Text>
-                     Sing up for a new account and join a our fantsy world
+                     Sing up for a new account and <br /> 
+                        join a our <br />
+                             fantasy world
                  </Text>
                  <HeroBtnWrapper>
-                     <Button to='singup' onMouseEnter={onHover} onMouseLeave={onHover}>
+                     <Button to='singup' 
+                        onMouseEnter={onHover}
+                         onMouseLeave={onHover}
+                         primary='true'
+                         >
                          Get Started 
                          {hover? <ArrowForward/> : <ArrowRight/>}
                          </Button>
